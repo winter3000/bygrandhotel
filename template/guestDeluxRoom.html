@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>豪华大床房</title>
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/swiper-3.4.0.jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
+</head>
+<body class="guestDeluxRoom wenquan">
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide content">
+            <header>
+                <a href="guestRoom.html" class="return"></a>
+                <h1>客房预订</h1>
+                <button type="button" class="menu-button"></button>
+            </header>
+            <section class="main">
+                <!-- Swiper -->
+                <div class="swiper-container3">
+                    <div class="swiper-wrapper">
+                       <!-- <div class="swiper-slide">
+                            <img src="../images/guestRoom1.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/guestRoom2.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/guestRoom3.png">
+                        </div>-->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="detailTxt">
+                    <h2></h2>
+                    <p></p>
+                    <ul>
+                        <li> 液晶屏幕电视</li>
+                        <li> 宽带网线接入 高速无线上网</li>
+                        <li> 迷你酒吧</li>
+                        <li> 全套豪华卫浴用品</li>
+                        <li> 宽敞豪华的大理石浴室</li>
+                        <li> 步入式衣帽间</li>
+                        <li> 中央空调系统</li>
+                        <li> 电子密码保险柜 </li>
+                        <li> 免费瓶装水</li>
+                    </ul>
+                </div>
+                <div class="order">
+                    <a href="guestRoomOrder.html">立 即 预 定</a>
+                </div>
+            </section>
+        </div>
+        <ul class="swiper-slide menu">
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+'px';
+    var url=window.location.search;
+    var id=url.substr(url.indexOf("=")+1);
+    var rDate=null;
+    $.ajax({
+        type:"get",
+        url:"../json/guestDeluxRoom.json",
+        async:true,
+        success:function(data){
+            rDate=data[id];
+            //轮播图
+            var swiperTxt='';
+            $(rDate.imgsrc).each(function(i,ele){
+                swiperTxt+='<div class="swiper-slide">'+'<img src='+ele+'>'+'</div>';
+            });
+            $('section .swiper-wrapper').html(swiperTxt);
+            //文字
+            $('.detailTxt h2').html(rDate.title);
+            $('.detailTxt p').html(rDate.txt);
+            //列表
+            var listDtail='';
+            $(rDate.listDtail).each(function(i,ele){
+             listDtail+='<li>'+ele+'</li>';
+            });
+            $('.detailTxt ul').html(listDtail);
+            //预定地址
+            $('.order a').attr('href','guestRoomOrder.html?name='+id);
+        }
+    });
+</script>

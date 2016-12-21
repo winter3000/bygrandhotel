@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>餐饮预订</title>
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/swiper-3.4.0.jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
+</head>
+<body class="foodOrder wenquan">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide content">
+            <header>
+                <a href="food.html" class="return"></a>
+                <h1>餐饮美食</h1>
+                <button type="button" class="menu-button"></button>
+            </header>
+            <section class="main">
+                <!-- Swiper -->
+                <div class="swiper-container3">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h2></h2>
+                <p></p>
+                <div class="compInfo">
+                    <p class="place"></p>
+                    <p class="time"></p>
+                </div>
+                <div class="order">
+                    <a href="javascript:;">立 即 预 定</a>
+                </div>
+                <div class="comfirm">
+                    <p>010-84832266</p>
+                    <div><span>取消</span><span>通话</span></div>
+                </div>
+            </section>
+        </div>
+        <ul class="swiper-slide menu">
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $.ajax({
+        type:"get",
+        url:"../json/food.json",
+        async:true,
+        success:function(data){
+            rDate=data[id];
+            var swiperTxt='';
+            $(rDate.imgsrc).each(function(i,ele){
+                swiperTxt+='<div class="swiper-slide">'+'<img src='+ele+'>'+'</div>';
+            });
+            $('section .swiper-wrapper').html(swiperTxt);
+            $('section>h2').html(rDate.title);
+            $('section>p').html(rDate.txt);
+            $('section .place').html(rDate.place);
+            $('section .time').html(rDate.time[0]+'<br>'+rDate.time[1]);
+            $('.comfirm>p').html(rDate.telephone)
+        }
+    });
+</script>

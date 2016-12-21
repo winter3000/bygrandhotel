@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>婚庆宴会</title>
+     <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/swiper.js"></script>
+     <link rel="stylesheet" href="../css/swiper.css">
+     <link rel="stylesheet" href="../css/style.css">
+     <script src="../js/index.js"></script>
+ </head>
+ <body class="wedding">
+     <div class="swiper-container">
+         <div class="swiper-wrapper">
+             <div class="swiper-slide content">
+                 <header>
+                     <a href="../index.html" class="return"></a>
+                     <h1>婚庆宴会</h1>
+                     <button type="button" class="menu-button"></button>
+                 </header>
+                 <section class="main">
+                     <div class="swiper-container2">
+                         <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                                 <img src="../images/wedding0.png" alt="">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="../images/wedding1.png" alt="">
+                             </div>
+                             <div class="swiper-slide">
+                                 <img src="../images/wedding0.png" alt="">
+                             </div>
+                         </div>
+                     </div>
+                     <p>
+                         北苑大酒店温泉水疗中心占地2万㎡，拥有京城北部独具特色的露天温泉，使用地下深采温泉水源。极致个性化的服务理念与全球流行的娱乐休闲方式结合
+                     </p>
+                 </section>
+             </div>
+             <ul class="swiper-slide menu">
+             </ul>
+         </div>
+     </div>
+</body>
+</html>
+<script>
+    document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+'px';
+    var swiper2 = new Swiper('.swiper-container2', {
+        loop:true,
+        pagination: '.swiper-container2 .swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+</script>

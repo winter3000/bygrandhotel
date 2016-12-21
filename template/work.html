@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>商务办公</title>
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <!--<script src="../js/swiper-3.4.0.jquery.min.js"></script>-->
+    <script src="../js/swiper.js"></script>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
+</head>
+<body class="work">
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide content">
+            <header>
+                <a href="../index.html" class="return"></a>
+                <h1>商务办公</h1>
+                <button type="button" class="menu-button"></button>
+            </header>
+            <section class="main">
+                <div class="swiper-container2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/work1.png" alt="">
+                            <div class="txt">
+                                写字间楼层共11层，总面积16500 m2，
+                                每层可提供120～1480²面积不等的办公空间。
+                                空间装修标准为精装修，
+                                一应办公室硬件设施齐全，
+                                是各企、事业单位租赁办公
+                                经营场所的首选之地。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/work1.png" alt="">
+                            <div class="txt">
+                                写字间楼层共11层，总面积16500 m2，
+                                每层可提供120～1480²面积不等的办公空间。
+                                空间装修标准为精装修，
+                                一应办公室硬件设施齐全，
+                                是各企、事业单位租赁办公
+                                经营场所的首选之地。
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/work1.png" alt="">
+                            <div class="txt">
+                                写字间楼层共11层，总面积16500 m2，
+                                每层可提供120～1480²面积不等的办公空间。
+                                空间装修标准为精装修，
+                                一应办公室硬件设施齐全，
+                                是各企、事业单位租赁办公
+                                经营场所的首选之地。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <ul class="swiper-slide menu">
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+'px';
+    var swiper2 = new Swiper('.swiper-container2', {
+        loop:true,
+        pagination: '.swiper-container2 .swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 30,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+</script>

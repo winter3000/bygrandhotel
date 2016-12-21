@@ -1,0 +1,384 @@
+body,h1,h2,h3,h4,p,ul,li,input{ margin: 0; padding: 0;}
+body { font-family: "Microsoft YaHei UI Light"; width: 100vw; height: 100vh;color: #ffffff;}
+ul,li{list-style: none}
+a{text-decoration: none; color: #ffffff;}
+img{ vertical-align: top;border: none;}
+input{border: none;}
+header .menu-button{outline: none;}
+h1{ font-size: 0.3rem; font-weight: normal; flex: inherit}
+.swiper-pagination-bullet-active{ background: #fff; }
+/*----------------------------index--------------------------------------------*/
+#index{
+    background: url("../images/index-bg.png") no-repeat left top/cover;
+    font-size: 0.32rem;
+}
+#index .side{
+    width: 3.1rem;
+    height: 100vh;
+    background: rgba(0,0,0,.72);
+}
+#index .logo{
+    width: 100%;
+    text-align: center;
+    padding: 0.48rem 0 0.66rem;
+}
+#index .logo img{
+    width: 1.62rem;
+}
+#index .side ul{
+    display: flex;  display: -webkit-flex;
+    flex-direction: column;
+    align-items:center;
+}
+#index .side li{
+    width: 1.74rem;
+    height: 1.06rem;
+    box-sizing: border-box;
+    line-height: 1.06rem;
+    padding-top: 0.02rem;
+    position: relative;
+    text-align: center;
+}
+.action a{ color: #c98010; }
+#index .side li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom:  0.02rem;
+    width: 100%;
+    height: 0.02rem;
+    background-image: -webkit-linear-gradient(left,#59504a 25%,#fff 50%,#59504a 95%);
+}
+header{
+    height: 0.88rem;
+    padding: 0 0.3rem;
+    background: #190d07;
+    display: flex;  display: -webkit-flex;
+    justify-content: space-between;
+}
+header a{
+    display: block;
+    height: 100%;
+    width: 0.22rem;
+    background: url("../images/return.png") no-repeat left center/0.22rem;
+}
+header button{
+    display: block;
+    border: none;
+    height: 100%;
+    width: 0.4rem;
+    background: url("../images/three.png") no-repeat left center/0.4rem;
+}
+header h1{
+    line-height: 0.88rem;
+}
+.swiper-container .content{min-height: 100vh}
+.menu{
+    background: #190d07;
+    width: 2.9rem;
+    height: 100vh;
+    font-size: 0.3rem;
+    line-height: 0.78rem;
+    padding-left: 0.3rem;
+    display: flex;  display: -webkit-flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index: 66;
+}
+.menu li{height: 0.78rem;}
+/*背景*/
+.entertain,.meeting,.wedding,.meetingReport,.guestDeluxRoom,.work{background:#190d07 url("../images/other-bg.png") no-repeat left top/cover;}
+
+/*=========康体娱乐=============*/
+.entertain{
+    font-size: 0.32rem;
+    color: #ffffff;
+}
+.entertain .main li{
+    height: 3.1rem;
+    margin-bottom: 0.1rem;
+    position: relative;
+}
+.entertain .main img { width: 100%;}
+.entertain .main p{
+    text-align: center;
+    font-size: 0.24rem;
+    padding:0 0.6rem;
+    word-break:keep-all;
+    position: absolute;
+    top: 0.7rem;
+}
+ .entertain .main h2{
+    position: absolute;
+    left: 0.3rem;
+    top: 0.2rem;
+    font-size: 0.26rem;
+}
+.entertain .main a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*北苑温泉*/
+.wenquan{background: #190d07; text-align: center;
+    }
+.wenquan .swiper-container3{height: 5.54rem; position: relative;}
+.wenquan .swiper-container3 .swiper-slide img{
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+.wenquan h2{
+    font-size: 0.32rem;
+    height: 0.84rem;
+    line-height: 0.84rem;
+    padding-top: 0.23rem;
+}
+.wenquan p{
+    font-size: 0.24rem;
+    word-break:keep-all;
+    padding: 0 0.9rem ;
+    line-height: 0.36rem;
+}
+.wenquan .order{
+    position: absolute;
+    bottom: 0.65rem;
+    left: 50%;
+    margin-left: -1.22rem;
+}
+.wenquan .order a{
+    display: block;
+    width: 2.44rem;
+    height: 0.58rem;
+    border: 0.02rem solid #fff;
+    line-height: 0.58rem;
+    font-size: 0.26rem;
+}
+/*北苑健身*/
+.jianshen p{padding: 0 1.2rem ;}
+/*=========会议会展=============*/
+.meeting .main p{ padding:0 1.2rem; }
+/*多功能会议厅*/
+.meetingReport .swiper-container2 {
+    /*   width: 7.5rem;*/
+ width: 100%;
+height: 100vh;
+padding-top: 1.24rem;
+}
+.meetingReport .swiper-container2 .swiper-slide{
+    width: 5.3rem;
+    height: 7.4rem;
+}
+.meetingReport .swiper-container2 .swiper-slide .txt{
+background: #ffffff;
+width: 100%;
+height: 2.72rem;
+line-height: 0.36rem;
+color: #6d3f28;
+box-sizing: border-box;
+padding: 0.28rem 0 0 0.35rem;
+word-break:keep-all;
+}
+.meetingReport .swiper-container2 .swiper-slide h3{ font-size: 0.3rem; }
+.meetingReport .swiper-container2 .swiper-slide p:nth-of-type(1){ font-size: 0.28rem;
+font-weight: bold;padding: 0.07rem 0 }
+.meetingReport .swiper-container2 .swiper-slide p:nth-of-type(2){ font-size: 0.24rem;}
+.meetingReport .swiper-container2 .swiper-slide img{
+width: 100%;
+height: 4.68rem;
+}
+.meetingReport .swiper-container2 .swiper-slide::after{
+content:"";
+position: absolute;
+bottom: -0.75rem;
+left: 1.9rem;
+width: 1.5rem;
+height: 1.5rem;
+border-radius: 50%;
+background:#342010;
+}
+/*=========舒适客房=============*/
+.guestRoom .main p{ padding:0 1.7rem; }
+/*豪华大床房*/
+.guestDeluxRoom .swiper-container3{position: relative;height: 4.52rem; }
+.guestDeluxRoom .swiper-container3 .swiper-slide img{ height: 100%; width: 100%;}
+.guestDeluxRoom .detailTxt p{padding: 0 0.6rem 0.18rem 0.6rem;  }
+.guestDeluxRoom .detailTxt li{
+    font-size: 0.2rem;
+    word-break:keep-all;
+    height: 0.36rem;
+    line-height: 0.36rem;
+}
+.guestDeluxRoom .detailTxt li::before{
+    content: "● ";
+    color: #ffffff;
+}
+/*确认预订*/
+.guestRoomOrder{background: #2e1a10;font-size: 0.28rem;}
+.guestRoomOrder .swiper-container3{ height: 4.52rem;
+    position: relative;}
+.guestRoomOrder .swiper-container3 img{ height: 100%; width: 100%;}
+.guestRoomOrder h2{
+    font-size: 0.32rem;
+    line-height: 0.85rem;
+    height: 0.85rem;
+    padding-left: 0.33rem;}
+.guestRoomOrder .part{ background: #190d07; padding: 0 0.33rem;
+    margin-bottom: 0.13rem;}
+.guestRoomOrder .part input{
+    background: transparent;
+    color: #ffffff;
+    font-size: 0.24rem;
+    vertical-align: middle;
+}
+.guestRoomOrder .part label{
+    vertical-align: middle;
+    float: right;
+    padding-left: 0.3rem;}
+.guestRoomOrder .part li{
+    height: 0.97rem;
+    line-height: 0.97rem;
+    border-bottom: 1px solid #2e1a10
+}
+.guestRoomOrder .part1 .roomnum{
+    width: 1.58rem;
+    float: right;
+    display: flex;display: -webkit-flex;
+    justify-content: space-between;
+}
+.guestRoomOrder .part1 i{
+    display: block;
+    width: 0.42rem;
+}
+.guestRoomOrder .part1 img{ width: 100%;vertical-align: middle;}
+.guestRoomOrder .tabCtrl{ background: #190d07; }
+.guestRoomOrder .tabTitle{
+    height: 0.85rem;
+    line-height: 0.85rem;
+    display: flex;display: -webkit-flex;
+    justify-content: space-around;
+}
+.guestRoomOrder .tabTitle span{
+    display: block;
+    padding-left: 0.33rem;
+    flex: 1;
+    border-bottom: 0.02rem solid #2e1a10;
+}
+.guestRoomOrder .tabTitle span.active{ border-bottom: 0.06rem solid #9f7b59;}
+.guestRoomOrder .tabTxt{
+    padding: 0.4rem 0 1.2rem 0.33rem;
+    line-height: 0.42rem;
+    font-size: 0.24rem;}
+.guestRoomOrder .tabTxt p:nth-of-type(2){  display: none;}
+.guestRoomOrder footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    display: flex;display: -webkit-flex;
+}
+.guestRoomOrder footer div{
+    background: #2e1a10;
+    font-size: 0.32rem;
+    flex: 47;
+    padding-left: 0.33rem;
+}
+.guestRoomOrder footer a{
+    display: block;
+    background: #9f7b59;
+    font-size: 0.38rem;
+    font-weight: bold;
+    flex: 28;
+    text-align: center;
+}
+/*=========婚庆宴会=============*/
+.wedding{
+    text-align: center;
+    font-size: 0.24rem;
+}
+.wedding p{
+    word-break:keep-all;
+    padding:0 0.7rem;
+    line-height: 0.36rem;
+}
+.wedding .swiper-container2{
+    width:7.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+}
+.wedding .swiper-container2 .swiper-slide {
+    height: 6.76rem;
+    width: 4.52rem;
+}
+.wedding .swiper-container2 .swiper-slide img{
+    height: 6.76rem;
+    border-radius: 0.2rem;
+    width: 100%;
+}
+/*=========餐饮美食=============*/
+.foodOrder .swiper-container3{height: 4.52rem;
+    position: relative;}
+.foodOrder .main>p{padding: 0 2rem 0.56rem;}
+.foodOrder .place{
+    height: 0.65rem;
+    line-height: 0.65rem;
+    font-size: 0.2rem;
+}
+.foodOrder .time{
+    line-height: 0.43rem;
+    font-size: 0.22rem;
+    padding: 0 2.6rem;
+}
+/*=========商务办公=============*/
+.work .swiper-container2{height: 100vh;}
+.work .swiper-container2 .swiper-slide{
+    padding-top: 0.72rem;
+    width: 6.42rem;
+    height: 9.28rem;
+    border-radius: 0.15rem;
+    text-align: center;
+    overflow: hidden;
+}
+.work .swiper-container2 img{
+    width: 100%;
+    height: 5.08rem;
+}
+.work .txt{
+    background: #ffffff;
+    width: 100%;
+    height: 4.2rem;
+    line-height: 0.33rem;
+    color: #656565;
+    font-size: 0.28rem;
+    box-sizing: border-box;
+    padding: 0.72rem 0 0 0;
+    word-break:keep-all;
+}
+/*=========预订电话弹框=============*/
+.comfirm{
+    background: #ffffff;
+    width: 5.4rem;
+    height: 2.1rem;
+    border-radius: 0.28rem;
+    color: #0096ff;
+    position: absolute;
+    top: 4.9rem;
+    left: 1.05rem;
+    z-index: 70;
+    font-size: 0.36rem;
+    overflow: hidden;
+    display: none;
+}
+.comfirm p{
+    height: 1.30rem;line-height: 1.30rem;border-bottom: 1px solid #d5d5d5;font-size: 0.36rem;
+}
+.comfirm>div{
+    display: flex;display: -webkit-flex;
+}
+.comfirm span{flex: 1;
+    line-height: 0.8rem;
+    text-align: center;}
+.comfirm span:nth-of-type(1){border-right: 1px solid #d5d5d5;}
