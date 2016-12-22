@@ -141,19 +141,19 @@ header h1{
     padding: 0 0.9rem ;
     line-height: 0.36rem;
 }
-.wenquan .order{
+.order{
     position: absolute;
     bottom: 0.65rem;
     left: 50%;
     margin-left: -1.22rem;
-}
-.wenquan .order a{
-    display: block;
+    border: 1px solid #fff;
     width: 2.44rem;
     height: 0.58rem;
-    border: 0.02rem solid #fff;
     line-height: 0.58rem;
     font-size: 0.26rem;
+}
+.order a{
+    display: block;
 }
 /*北苑健身*/
 .jianshen p{padding: 0 1.2rem ;}
@@ -296,8 +296,7 @@ background:#342010;
 }
 .guestDeluxRoom .order{
     position: static;
-    margin: 0;
-    padding: 0.44rem 0 0 2.53rem;
+    margin: 0.44rem 0 0 2.53rem;
 }
 /*=========婚庆宴会=============*/
 .wedding{
