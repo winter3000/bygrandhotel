@@ -294,6 +294,11 @@ background:#342010;
     flex: 28;
     text-align: center;
 }
+.guestDeluxRoom .order{
+    position: static;
+    margin: 0;
+    padding: 0.44rem 0 0 2.53rem;
+}
 /*=========婚庆宴会=============*/
 .wedding{
     text-align: center;
