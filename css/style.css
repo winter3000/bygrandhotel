@@ -1,11 +1,11 @@
-body,h1,h2,h3,h4,p,ul,li,input{ margin: 0; padding: 0;}
-body { font-family: "Microsoft YaHei UI Light"; width: 100vw; height: 100vh;color: #ffffff;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+body,h1,h2,h3,h4,p,ul,li,input{ margin: 0; padding: 0;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);outline: none;}
+body { font-family:Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,sans-self; width: 100vw; height: 100vh;color: #ffffff;}
 ul,li{list-style: none}
 a{text-decoration: none; color: #ffffff;}
 img{ vertical-align: top;border: none;}
 input{border: none;}
 header .menu-button{outline: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
-div{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+div{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);outline: none;}
 h1{ font-size: 0.3rem; font-weight: normal; flex: inherit}
 .swiper-pagination-bullet-active{ background: #fff; }
 /*----------------------------index--------------------------------------------*/
