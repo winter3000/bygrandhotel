@@ -1,12 +1,20 @@
 /**
  * Created by hxsd on 2016/12/16.
  */
-
+//自适应
 document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+'px';
+//解析url
 var url=window.location.search;
 var id=url.substr(url.indexOf("=")+1);
 var rDate=null;
-
+//预订弹窗
+function telComfirm(){
+    $('.order').on('click',function(){
+        $('.comfirm').show();
+        $('.comfirm span').click(function(){$('.comfirm').hide();})
+    })
+}
+//加载
 $(function(){
     //侧边总导航数据
     var slideHref=[
@@ -48,9 +56,9 @@ $(function(){
         });
     }
     menuClick();
-    //自动轮播swiper3
-    var swiper3 = new Swiper('.swiper-container3', {
-        pagination: '.swiper-container3 .swiper-pagination',
+//自动轮播swiper3
+    var swiper = new Swiper('.main .swiper-container', {
+        pagination: '.main .swiper-pagination',
         paginationClickable: true,
         spaceBetween: 30,
         centeredSlides: true,
@@ -58,52 +66,5 @@ $(function(){
         autoplayDisableOnInteraction: false
     });
     //预订弹窗
-    function telComfirm(){
-        $('.order').on('click',function(){
-            $('.comfirm').show();
-            $('.comfirm span').click(function(){$('.comfirm').hide();})
-        })
-    }
     telComfirm()
 });
-
-/*    <div class="swiper-container">
- <div class="swiper-wrapper">
- <div class="swiper-slide content">
-
- </div>
- <ul class="swiper-slide menu">
- <li ><a href="../index.html">首页</a></li>
- <li ><a href="../template/entertainment.html">康体娱乐</a></li>
- <li><a href="../template/meeting.html">会议会展</a></li>
- <li><a href="../template/wedding.html">婚庆宴会</a></li>
- <li><a href="../template/guestRoom.html">舒适客房</a></li>
- <li class="action"><a href="../template/food.html">餐饮美食</a></li>
- <li><a href="../template/work.html">商务办公</a></li>
- </ul>
- </div>
- </div>*/
-
-/* <script src="../js/jquery-3.1.0.min.js"></script>
- <script src="../js/swiper-3.4.0.jquery.min.js"></script>
- <link rel="stylesheet" href="../css/swiper.css">
- <link rel="stylesheet" href="../css/style.css">
- <script src="../js/index.js"></script>*/
-
-/*var url=window.location.search;
- var id=url.substr(url.indexOf("=")+1);
- var rDate=null;
- $.ajax({
- type:"get",
- url:"../json/guestDeluxRoom.json",
- async:true,
- success:function(data){
- rDate=data[id];
- var swiperTxt='';
- $(rDate.imgsrc).each(function(i,ele){
- swiperTxt+='<div class="swiper-slide">'+'<img src='+ele+'>'+'</div>';
- });
- $('section .swiper-wrapper').html(swiperTxt);
- $('section>h2').html(rDate.title);
- }
- });*/

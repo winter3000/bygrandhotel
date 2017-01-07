@@ -124,8 +124,8 @@ header h1{
 /*北苑温泉*/
 .wenquan{background: #190d07; text-align: center;
     }
-.wenquan .swiper-container3{height: 5.54rem; position: relative;}
-.wenquan .swiper-container3 .swiper-slide img{
+.wenquan .main .swiper-container{height: 5.54rem; position: relative;}
+.wenquan .main .swiper-container .swiper-slide img{
     max-width: 100%;
     min-height: 100%;
     overflow: hidden;
@@ -202,8 +202,8 @@ background:#342010;
 /*=========舒适客房=============*/
 .guestRoom .main p{ padding:0 1.7rem; }
 /*豪华大床房*/
-.guestDeluxRoom .swiper-container3{position: relative;height: 4.52rem; }
-.guestDeluxRoom .swiper-container3 .swiper-slide img{ height: 100%; width: 100%;}
+.guestDeluxRoom .main .swiper-container{position: relative;height: 4.52rem; }
+.guestDeluxRoom .main .swiper-container .swiper-slide img{ height: 100%; width: 100%;}
 .guestDeluxRoom .detailTxt p{padding: 0 0.6rem 0.18rem 0.6rem;  }
 .guestDeluxRoom .detailTxt li{
     font-size: 0.2rem;
@@ -217,9 +217,9 @@ background:#342010;
 }
 /*确认预订*/
 .guestRoomOrder{background: #2e1a10;font-size: 0.28rem;}
-.guestRoomOrder .swiper-container3{ height: 4.52rem;
+.guestRoomOrder .main .swiper-container{ height: 4.52rem;
     position: relative;}
-.guestRoomOrder .swiper-container3 img{ height: 100%; width: 100%;}
+.guestRoomOrder .main .swiper-container img{ height: 100%; width: 100%;}
 .guestRoomOrder h2{
     font-size: 0.32rem;
     line-height: 0.85rem;
@@ -326,7 +326,7 @@ background:#342010;
     width: 100%;
 }
 /*=========餐饮美食=============*/
-.foodOrder .swiper-container3{height: 4.52rem;
+.foodOrder .main .swiper-container{height: 4.52rem;
     position: relative;}
 .foodOrder .main>p{padding: 0 2rem 0.56rem;}
 .foodOrder .place{
